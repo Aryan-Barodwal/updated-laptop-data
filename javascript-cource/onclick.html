@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript on click </title>
+</head>
+
+<body>
+
+    <p id="para">My Heading
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati, error cumque voluptate omnis commodi exercitationem repellendus, sint cupiditate veniam facere voluptatem esse dolores est! Accusantium ad soluta quo libero.
+    </p>
+    <button id="btn" type="submit" onclick="myfunction()"> Click Me!</button>
+
+
+
+    <script>
+
+        function myfunction() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.color){
+                para.style.color = 'blue';
+            }
+            else {
+                para.style.color = 'red';
+            }
+
+        }
+
+        // function myfunction() {
+        //     let btn = document.getElementById('btn');
+        //     let para = document.getElementById('para');
+
+        //     if (para.style.display != 'none') {
+        //         para.style.display = 'none';
+        //     }
+        //     else {
+        //         para.style.display = 'block';
+        //     }
+
+        // }
+
+    </script>
+</body>
+
+
+
+</html>

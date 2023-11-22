@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript on click </title>
+
+    <style>
+        /* this  */
+
+        div#para {
+            width: 22%;
+            height: 270px;
+
+            border: 2px solid transparent;
+            background-color: rgba(0, 0, 0, 0.461);
+
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="para"> this is div</div>
+    <button id="btn" type="submit" onclick="myfunction()"> Click Me!</button>
+
+</body>
+
+<script>
+
+    function myfunction(btn, para) {
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+
+        // if (para.style.color = 'null') {
+        //     para.style.color = 'blue';
+        // }
+        // else {
+        //     para.style.color = 'blue';
+        // }
+
+        if (para.style.display != 'none') {
+            para.style.display = 'none';
+        }
+        else {
+            para.style.display = 'block';
+        }
+
+
+
+    }
+
+
+    // "document.getElementById('id1').style.color = 'red'"
+</script>
+
+</html>

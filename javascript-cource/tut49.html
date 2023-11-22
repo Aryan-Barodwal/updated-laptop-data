@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript | String and String Methods </title>
+    <style>
+        #content .html{
+            font-weight: 900;
+            color: rgb(241, 45, 45);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1>Lorem ipsum dolor sit amet..</h1>
+
+        <div id="content">
+            (none)
+        </div>
+
+
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum molestiae ex animi minus minima esse neque
+            illum, officia optio perspiciatis reiciendis vitae dignissimos sunt deleniti reprehenderit aliquam quos
+            dolorem molestias soluta exercitationem nihil dolor earum at doloribus! Rem, odio repudiandae.
+        </p>
+
+
+        <script>
+            // var string = "this";
+
+            var string = 'thi"s'
+            var name = 'harry';
+            var channel = 'code-with-harry';
+            var messege = 'harry is a good boy rather than all boys and he is web developer';
+
+            // console.log(string);
+            // console.log(string + name + channel + messege);
+            // but in o/p the drawback is concatination of strings......
+
+            var content = `${name} is a 'nice' person "and" he has a yt channel ${channel} "and" its info is ${messege}`;
+            // console.log(content);
+
+            var len = name.length;
+            console.log(`Length of name is ${len}`);
+
+            var len = channel.length;
+            // console.log(`Length of channel is ${len}`)
+
+            var len = messege.length;
+            // console.log(`Length of messege is ${len}`)
+
+            // console.log("Hello \\nworld\nHarry\tand");
+
+            //  "/n" is a escape sequence characters , this is used for newline character... 
+            // or “\n” is an escape sequence that is used to take the string after it in the next line. It’s a new line character.
+            //   "/t" is a escape sequence characters , this is used for inserting tab in a line .. 
+
+            //  by this we insert new html to webpage..
+
+            var y = new String("aryan");  //This is how we insert new string ....
+            console.log(y);
+
+            document.getElementById('content').innerHTML = '<h1 class="html">This is an h1 heading</h1>' //This is how we insert new HTML ....
+            // document.getElementById('content').innerHTML = '<h1>This is an h3 heading</h1>' //This is how we insert new HTML ....
+
+
+
+
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>

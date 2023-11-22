@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in javascript more </title>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: aliceblue;
+        }
+
+        .upper {
+            border: 2px solid red;
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .all-texts {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="upper">
+        <div class="all-texts">
+            <h1>Aryan Barodwal</h1>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia minus reprehenderit nihil ut quasi beatae
+                doloremque quas iste possimus numquam ipsa corporis dicta voluptatibus, omnis ipsam laboriosam. Atque,
+                quo fugit.
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        var string = "This is string of letters";
+        // console.log(string);
+
+        // first occurance of a substring !!
+        var position = string.indexOf('is');
+        // console.log(position);
+
+        // last occurance of a substring !!  ( Means it will count from last )
+        position = string.lastIndexOf('is');
+        // console.log(position);
+
+        var substr = string.slice(1, 6);  //scicing of strings in Js
+        // console.log(substr);
+
+
+        var substr1 = string.substr(1, 6);  //This function "substr" in Js count no. of elements in line....
+        // console.log(substr1);
+
+        var replaced = string.replace('This is string', 'The legend code-with-harry');  // this will replace elements which are in string!!!
+        // var replaced = string.replace('string', 'harry');
+
+        // console.log(string);
+        // console.log(replaced);
+
+
+        // console.log(string.toUpperCase());  // To convert into upper case 
+        // console.log(string.toLowerCase());  // To convert into lower case 
+
+
+        var newstring11 = string.concat('_in which string is defined!');  //merging of two strings by "concat" instruction
+        // console.log(newstring11);
+
+        var str_with_white = ("         This contains      spaces       ");
+
+        // console.log(str_with_white);
+        //console.log(str_with_white.trim());  //this will cut the start and end spaces of string
+
+
+        // string  :- This is string of letters
+
+        var char2 = string.charAt(2);  //"charAt" gives the letter which is on index no....
+        //console.log(char2);
+        var char3 = string.charCodeAt(7);  //"charCodeAt" gives 'UTF' code of letter at index no....  , character code
+        //console.log(char3);   //  not very important
+
+        // slicing of strings
+
+        // console.log(string[2])
+        // console.log(string[3])
+        // console.log(string[4])
+        // console.log(string[5])
+        // console.log(string[6])
+        // console.log(string[7])
+
+    </script>
+
+
+</body>
+
+</html>

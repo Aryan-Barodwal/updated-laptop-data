@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope-and-conditional-statements</title>
+</head>
+
+<body>
+    <div class="item1">item1</div>
+    <div class="item2">item2</div>
+    <div class="item3">item3</div>
+    <div class="item4">item4</div>
+    <div class="item5">item5</div>
+
+
+    <script>
+        // var string1 = "this is a string";
+        // var string1 = "this is a string_2";
+        // console.log(string1);
+
+        // scopes are different for variables..
+
+        // let a = "u";
+        // {
+        //     let a = "u2";
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+
+
+        // lets talk about const variable
+
+        // const a = "This cannot be changed!";
+        // a = "This cannot be changed in JS or DOM!"       // In a const function the strings are not change!..
+        // console.log(a);
+
+        // This is called if else ladder 
+
+        
+        let age = 3;
+
+        if (age > 30) {
+            console.log("You can drink water..");
+        }
+
+        else if (age == 2) {
+            console.log("nothing is age")
+        }
+
+        else {
+            console.log("you can drink cold drink..")
+        }
+
+        if (age > 2) {
+            console.log("You can drink water..");
+        }
+// 
+        const cups = 45;
+
+        switch (cups) {
+            case 4:
+                console.log("This value of cups, 4");
+
+                break;
+            case 41:
+                console.log("This value of cups, 41");
+
+                break;
+            case 43:
+                console.log("This value of cups, 43");
+
+                break;
+            case 45:
+                console.log("This value of cups, 45");
+
+                break;
+
+            default:
+                console.log("The value of Cups, none of 4 ,41, 43 ,45")
+                break;
+        }
+
+
+    </script>
+</body>
+
+</html>

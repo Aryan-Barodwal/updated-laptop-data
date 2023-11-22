@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arrays and Objects in JS</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="conatiner">This is HTML</div>
+
+    <script>
+
+        // let age = 31;
+        // age = 30;
+
+        // console.log(age);    
+
+
+        // let firstName = "aryan";
+        // firstName = "web-dev";
+        // console.log(firstName)
+        //  End 
+
+        // const name = "aryan";
+        // name = hty;       //not declared in this it occurs error ;;;;;
+        // console.log(name);
+
+        // two types of values in js :- primitive data types and reference data types..........
+
+
+        let myvar = 34;                     //integer data types   ....
+        let myvar1 = "string";              //string data types  ....
+        let myvar2 = true;                  //bolean data type ...
+
+
+        let myvar3 = null;                      // null and undefined data type..
+        let myvar4 = undefined;
+        // end
+
+
+        let employe = {
+            name: "harry",
+            salary: 100000,
+            channel: "code-with-harry",
+            channel_1: "programming-with-harry",
+        }
+        console.log(employe);  //returns object 
+        console.log(employe.channel);            //slicing of object elements
+        console.log(employe.channel112);
+
+        // another way
+
+        // end
+
+        console.log(employe['channel']);
+        console.log(employe['channel_1']);
+
+
+        //  array is a special type of object ...!
+
+        // let names = new Array(24, 546, 647, "aryan", 1, 1.2, 2, 3, "harry", undefined);
+        console.log(names);
+
+        console.log(names[3]);
+        console.log(names[2]);
+        console.log(names[1]);
+        console.log(names[0]);
+
+        //if we want the length of array
+
+        console.log(names.length);
+        //if we want to sort any array(means acending to decending)
+        names = names.sort();
+        console.log(names);
+        console.log(names.sort());
+
+        names.push("This is pushed");      //push 
+        console.log(names);
+
+        names.pop("This is pulled");     //pop
+        console.log(names);
+
+        let names = new Array(24);
+        console.log(names.length);     // 23 empty items in array
+        names = names.sort();
+         names.push("This is pulled");
+        console.log(names)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

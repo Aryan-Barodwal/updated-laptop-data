@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+
+    <style>
+        /* css rigth here.... */
+    </style>
+</head>
+
+<body>
+
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>HOME</li>
+            <li>SUPPORT</li>
+            <li>CONTACT US</li>
+            <li>HELP</li>
+
+            <!-- <li>this is one</li> -->
+
+
+        </ul>
+    </div>
+
+    <div id="main2" class="container">
+        <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus iste harum libero dignissimos,
+            repudiandae sapiente id rem, officia officiis aliquid mollitia eaque distinctio nulla? Earum in numquam
+            similique asperiores.
+        </h1>
+
+        <p>
+            Lorem, ipsum.
+        </p>
+    </div>
+
+    <script>
+
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        let sel = document.querySelector('#nav');
+        console.log("selecters returns ", sel)
+
+        let sela = document.querySelector('#nav>li');
+        // let sela =  document.querySelector('#nav>li>a');    //null
+
+        // nav.onclick(close);
+        console.log("selecters returns ", sela)
+
+        let selaa = document.querySelectorAll('#nav>li');  //return node-list
+
+        console.log("selecters returns ", selaa)
+
+        // console.log(``)
+
+
+    </script>
+
+</body>
+
+</html>

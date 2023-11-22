@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #heading {
+        width: 70%;
+        height: 50vh;
+        background-color: bisque;
+        border: 2px solid red;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+
+    <!-- Using Events -->
+
+    <div id="heading"></div>
+
+    <!-- <button onclick="document.getElementById('heading').style.backgroundColor = 'red'; ">Click Now</button> -->
+
+    <!-- but we want when you click again on button then color is revert to start -->
+
+
+    <!-- <p id="demo">This is para</p>
+
+    <script>
+        document.getElementById("demo").style['font-size'] = '400px';
+    </script> -->
+
+    <div id="change">This is div tag</div>
+
+    <button onclick="MyFunction()">
+        click
+    </button>
+
+
+    <script>
+
+        function MyFunction() {
+        let result = document.getElementById('change');
+
+            if (result.style.backgroundColor === 'none') {
+                result.style.backgroundColor = 'black';
+            }
+            else {
+                result.style.backgroundColor = "yellow";
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

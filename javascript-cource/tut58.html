@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval & stetimeout</title>
+
+    <style>
+        /* css style here .. */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="container">
+            Time now is <span id="time"></span>
+        </div>
+
+        <!-- this is how you can tag your js with css -->
+
+        <!-- <h2>JavaScript HTML DOM</h2>
+        <p>Changing the HTML style:</p>
+
+
+        <p id="p1">Hello World!</p>
+        <p id="p2">Hello World!</p> -->
+
+
+        <script>
+
+            console.log("This is tutorial #58");
+
+
+            // setTimeout --> Allows us to run the function once after the interval of time..
+            // clearTimeout --> Allows us to run the function repeatedly after the interval of time...
+            // function greet11(){
+            //     console.log("Hello Good morning");
+            // }
+
+            // // setTimeout(greet11, 5000);
+            // let aaaaa  = setTimeout(greet11, 5000);
+            // console.log(aaaaa)
+
+            // function greet1(name, text) {
+            //     console.log("hello good morning " + `${name}` + " " + `${text}`);
+            // }
+
+            // Timeout = setTimeout(greet1, 6000, "aryan", "barodwal");  //timeout iske unqIue id ha..
+            // let Timeout = setTimeout(greet1, 2000, "aryan", "barodwal");  //timeout iske unIque id ha..
+
+            // console.log(Timeout);
+
+            // clearTimeout(Timeout);  //clear Timeout which we are providing...
+
+            // let intervaliD = setInterval(greet1, 1000, "Aryan is very good boy", "and he is very cool");  // Ye bi interval ki id return karta ha..
+            // console.log(intervaliD);
+
+            // clearInterval(intervaliD);
+
+            // let intervaliD = setInterval(greet1, 1000, "aryan", "barodwal");
+            // console.log(intervaliD);
+
+            function displayTime() {
+
+                time = new Date();
+                console.log(time);
+
+                document.getElementById('time').innerHTML = time;
+            }
+            setInterval(displayTime, 1000);
+
+
+
+
+
+
+
+
+
+            // document.getElementById('time').innerHTML = time;
+
+
+
+            // document.getElementById("p2").style.color = "blue";
+            // document.getElementById("p2").style.fontFamily = "Arial";
+            // document.getElementById("p2").style.fontSize = "40px";
+            // document.getElementById("p2").style.fontWeight = "larger";
+
+            // document.getElementById("p2").style.display = none;
+
+            // function greet11() {
+            //     console.log("Hello Good morning");
+            // }
+
+            // greet11("THIS IS OUT...");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+</body>
+
+</html>

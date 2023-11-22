@@ -1,0 +1,116 @@
+// console.log("This is tutorial 53");
+
+// let name0 = "harry";
+// let name1 = "aryan";
+// let name2 = "ansh";
+// let name3 = "ar-barodwal";
+// let name4 = "rohan";
+
+// console.log(name0 + "is a good boy ");
+// console.log(name1 + "is a good boy ");
+// console.log(name2 + "is a good boy ");
+// console.log(name3 + "is a good boy ");
+// console.log(name4 + "is a good boy ");
+
+// we know this is very hard way that we are calling name$ again and againn
+
+// simple i will do this by using Js functions
+
+function name_caller(name, greettext = "learning DOM and JavaScript by") {            //  on the 'greettext' the default argument is given ...
+    let name2 = "aryan2222";  //this name1 has in local scope , matlab ye sirf iske function me ha bssss
+    //'name2' is declared but its value is never read.
+    console.log(greettext + " " + name);
+    console.log(name + " is a good boy");
+}
+
+function sum(a, b, c) {
+    let d = a + b + c;
+    return d;
+    //  (unreachable code)
+    //return function ......
+}
+
+let retunvalue = sum(1, 2, 3);
+console.log(retunvalue);
+
+
+let name0 = "harry";             //  In python we have to gone throught this ---------- a = input("enter the value of this a variable :-" )                         
+let name1 = "aryan";
+let name2 = "ansh";
+let name3 = "ar-barodwal";
+let name4 = "rohan";
+let name5 = "papa-ji";
+
+
+let greettext = " Good evening";
+
+name_caller(name0, greettext);           //its calling
+name_caller(name1, greettext);    // this name1 is in global scope , matlab koi bhi ise use kr sakta ha...
+name_caller(name2, greettext);
+name_caller(name3, greettext);
+name_caller(name4, greettext);
+
+
+
+
+
+// name_caller(name6, welcometext);
+
+
+// recursive function
+
+// let retunvalue = sum(1, 2, 3);       // When we only print this then we get undefined in o/p.......
+// console.log(retunvalue);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+
+
+// function name_call(name_girl) {
+//     console.log(name_girl + " is a good girl");
+// }
+
+// let name6 = "mummy";
+
+// name_call(name6);
+
+
+
+
+
+
